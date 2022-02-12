@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./bootstrap";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/Helvetica.woff2');
+}
+
+.display-6 {
+  letter-spacing: 1.5px;
+  color: $heading-color;
+  font-family: Helvetica;
+}
+
+.nav-item {
+  &:first-child {
+    .nav-link {
+      padding-left: 0;
+    }
+  }
+  &:last-child {
+    .nav-link {
+      padding-right: 0;
+    }
+  }
+}
+
+.gg-2 {
+  grid-gap: 0.5rem;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 1.75rem;
+  letter-spacing: 1px;
+  color: $heading-color;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    height: 4px;
+    width: 50px;
+    background-color: $secondary;
+  }
+}
+
+.skills {
+  i {
+    font-size: $font-size-base * 1.75;
+  }
+  img {
+    max-width: 24px;
+    max-height: 24px;
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.page-break {
+  page-break-before: always;
+}
