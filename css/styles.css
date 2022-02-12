@@ -12416,14 +12416,9 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-@font-face {
-  font-family: Helvetica;
-  src: url("../fonts/Helvetica.woff2"); }
-
 .display-6 {
   letter-spacing: 1.5px;
-  color: #212529;
-  font-family: Helvetica; }
+  color: #212529; }
 
 .nav-item:first-child .nav-link {
   padding-left: 0; }
